@@ -1,0 +1,98 @@
+body{
+    background-color: #E8E8E8;
+    font-family: system-ui;
+}
+.accWraper{
+    max-width: 350px;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.accordion{
+    /* padding: 0 10px; */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.accHeading:hover{
+    background-color: #f1f4ff;
+}
+.accHeading{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 10px;
+}
+.accHeading span{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-align:center;
+    line-height: 30px;
+    border-radius: 40px;
+}
+
+.accHeading h3{
+    margin: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.accDataInner{
+    padding: 0 10px 10px 10px;
+    font-size: 14px; 
+    flex-direction: row;
+    width: calc(100% - 60px);
+    float: right;
+}
+.accData{
+    background-color: #f1f4ff;
+    display: none;
+}
+.accData span{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-align:center;
+    line-height: 30px;
+    border-radius: 40px;
+}
+.accData p{
+    padding: 0;
+    margin: 0;
+}
+.accActive{
+    background-color: #f1f4ff;
+} 
+.accHeading + .accData{
+    display: none;
+}
+.accActive + .accData{
+    display: inline-block;
+}
+.remove{
+    display: none;
+}
+.add{
+    display: block;
+}
+.accActive .remove{
+    display: block;
+}
+.accActive .add{
+    display: none;
+}
+.accData button{
+    margin-top: 20px;
+    padding: 8px 20px;
+    border: 0;
+    background: #6a63fe;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
